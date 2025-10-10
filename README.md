@@ -1,1 +1,1 @@
-# Simple Spring Boot Application With JWT
+# Simple spring boot project with JWT and MongoDB
