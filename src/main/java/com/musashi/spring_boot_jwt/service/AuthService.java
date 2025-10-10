@@ -35,7 +35,7 @@ public class AuthService {
 
     public void register(String email, String password){
         User user = userService.findByEmail(email);
-        if(user == null){
+        if(user != null){
             throw new ResponseStatusException(HttpStatus.CONFLICT, "A user with this email already exist!");
         }
         userService.save(new User(email, hashEncoder.encode(password)));
