@@ -1,6 +1,6 @@
-package com.musashi.spring_boot_jwt.database.repository;
+package com.musashi.spring_boot_jwt.repository;
 
-import com.musashi.spring_boot_jwt.database.model.RefreshToken;
+import com.musashi.spring_boot_jwt.model.RefreshToken;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 

@@ -1,4 +1,4 @@
-package com.musashi.spring_boot_jwt.database.model;
+package com.musashi.spring_boot_jwt.model;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
@@ -7,21 +7,34 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.Instant;
 import java.util.Objects;
 
-public class NoteResponse {
-    private String id;
+@Document
+public class Note {
+    @Id private ObjectId id = ObjectId.get();
+    private ObjectId ownerId;
     private String title;
     private String content;
     private long color;
     private Instant createdAt;
 
-    public NoteResponse() {}
+    public Note() {
 
-    public NoteResponse(String id, String title, String content, long color, Instant createdAt) {
+    }
+
+    public Note(ObjectId id, ObjectId ownerId, String title, String content, long color, Instant createdAt) {
         this.id = id;
+        this.ownerId = ownerId;
         this.title = title;
         this.content = content;
         this.color = color;
         this.createdAt = createdAt;
+    }
+
+    public ObjectId getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(ObjectId ownerId) {
+        this.ownerId = ownerId;
     }
 
     public String getTitle() {
@@ -56,22 +69,35 @@ public class NoteResponse {
         this.createdAt = createdAt;
     }
 
-    public String getId() {
+    public ObjectId getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 
     @Override
     public String toString() {
-        return "NoteResponse{" +
+        return "Note{" +
                 "title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", color=" + color +
                 ", createdAt=" + createdAt +
-                ", id='" + id + '\'' +
+                ", ownerId=" + ownerId +
+                ", id=" + id +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Note note = (Note) o;
+        return color == note.color && Objects.equals(title, note.title) && Objects.equals(content, note.content) && Objects.equals(createdAt, note.createdAt) && Objects.equals(ownerId, note.ownerId) && Objects.equals(id, note.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, content, color, createdAt, ownerId, id);
     }
 }

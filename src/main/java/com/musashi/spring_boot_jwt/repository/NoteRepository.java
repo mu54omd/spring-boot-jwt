@@ -1,6 +1,6 @@
-package com.musashi.spring_boot_jwt.database.repository;
+package com.musashi.spring_boot_jwt.repository;
 
-import com.musashi.spring_boot_jwt.database.model.Note;
+import com.musashi.spring_boot_jwt.model.Note;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 

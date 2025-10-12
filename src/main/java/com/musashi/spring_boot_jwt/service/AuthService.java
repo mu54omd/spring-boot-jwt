@@ -1,8 +1,8 @@
 package com.musashi.spring_boot_jwt.service;
 
-import com.musashi.spring_boot_jwt.database.model.RefreshToken;
-import com.musashi.spring_boot_jwt.database.model.TokenPair;
-import com.musashi.spring_boot_jwt.database.model.User;
+import com.musashi.spring_boot_jwt.model.RefreshToken;
+import com.musashi.spring_boot_jwt.model.TokenPair;
+import com.musashi.spring_boot_jwt.model.User;
 import com.musashi.spring_boot_jwt.security.HashEncoder;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;

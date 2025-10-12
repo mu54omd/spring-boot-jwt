@@ -1,12 +1,6 @@
-package com.musashi.spring_boot_jwt.database.model;
+package com.musashi.spring_boot_jwt.model;
 
 import jakarta.validation.constraints.NotBlank;
-import org.bson.types.ObjectId;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.time.Instant;
-import java.util.Objects;
 
 public class NoteRequest {
     private String id;

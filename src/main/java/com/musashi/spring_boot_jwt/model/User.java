@@ -1,4 +1,4 @@
-package com.musashi.spring_boot_jwt.database.model;
+package com.musashi.spring_boot_jwt.model;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;

@@ -1,8 +1,8 @@
-package com.musashi.spring_boot_jwt.database.controller;
+package com.musashi.spring_boot_jwt.controller;
 
-import com.musashi.spring_boot_jwt.database.model.AuthRequest;
-import com.musashi.spring_boot_jwt.database.model.RefreshRequest;
-import com.musashi.spring_boot_jwt.database.model.TokenPair;
+import com.musashi.spring_boot_jwt.model.AuthRequest;
+import com.musashi.spring_boot_jwt.model.RefreshRequest;
+import com.musashi.spring_boot_jwt.model.TokenPair;
 import com.musashi.spring_boot_jwt.service.AuthService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

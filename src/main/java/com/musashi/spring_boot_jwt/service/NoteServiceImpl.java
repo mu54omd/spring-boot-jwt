@@ -1,9 +1,9 @@
 package com.musashi.spring_boot_jwt.service;
 
-import com.musashi.spring_boot_jwt.database.model.Note;
-import com.musashi.spring_boot_jwt.database.model.NoteRequest;
-import com.musashi.spring_boot_jwt.database.model.NoteResponse;
-import com.musashi.spring_boot_jwt.database.repository.NoteRepository;
+import com.musashi.spring_boot_jwt.model.Note;
+import com.musashi.spring_boot_jwt.model.NoteRequest;
+import com.musashi.spring_boot_jwt.model.NoteResponse;
+import com.musashi.spring_boot_jwt.repository.NoteRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;

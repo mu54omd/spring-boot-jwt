@@ -1,7 +1,7 @@
 package com.musashi.spring_boot_jwt.service;
 
-import com.musashi.spring_boot_jwt.database.model.RefreshToken;
-import com.musashi.spring_boot_jwt.database.repository.RefreshTokenRepository;
+import com.musashi.spring_boot_jwt.model.RefreshToken;
+import com.musashi.spring_boot_jwt.repository.RefreshTokenRepository;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,8 +1,8 @@
-package com.musashi.spring_boot_jwt.database.controller;
+package com.musashi.spring_boot_jwt.controller;
 
-import com.musashi.spring_boot_jwt.database.model.Note;
-import com.musashi.spring_boot_jwt.database.model.NoteRequest;
-import com.musashi.spring_boot_jwt.database.model.NoteResponse;
+import com.musashi.spring_boot_jwt.model.Note;
+import com.musashi.spring_boot_jwt.model.NoteRequest;
+import com.musashi.spring_boot_jwt.model.NoteResponse;
 import com.musashi.spring_boot_jwt.service.NoteService;
 import jakarta.validation.Valid;
 import org.bson.types.ObjectId;

@@ -1,4 +1,4 @@
-package com.musashi.spring_boot_jwt.database.model;
+package com.musashi.spring_boot_jwt.model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;
